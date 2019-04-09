@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Concept Engine BETA 2.49</title>
+    <style>
+    #command {
+      border: 1px solid black;
+      height: 25%;
+      width: 95%;
+    }
+    #canvas {
+      border: 1px solid black;
+      height: 95%;
+      background-color: white;
+      border-radius: 4px;
+      width: 95%;
+    }
+
+    body {
+      background-color: #bfbfbf;
+      color: white;
+    } 
+
+    #engine {
+      padding: 10px;
+      font-family: Sans-Serif;
+    }
+
+    #control {
+      background-color: #0f0f0f;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 10px;
+      width: 95%;
+    }
+    </style>
+    <title>The Joseph Engine</title>
+  </head>
+  <body>
+  <p>
+  The Concept Engine
+  </p>
+  <canvas id="canvas"></canvas>
+  <div id="code">
+    <textarea id="command"></textarea><br>
+    <button onclick="calculate();">Run</button>
+  </div>
+    
+  <script src="render.js"></script>
+  </body>
