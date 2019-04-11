@@ -16,14 +16,17 @@ function clear() {
 
 //Please free to edit this class if there are any bugs
 class Cube {
-  constructor(origin, height, width, depth) {
-    
-    this.origin = origin;
+  constructor(trueoriginx, trueoriginy, trueoriginz, height, width, depth) {
+    this.originz = originz;
     this.height = height;
-    this.width = width;
-    this.depth = depth;
+    this.width = width / originz;
+    this.depth = depth / originz;
     
-    var a = [origin, origin];
+    this.originx = trueoriginx - width / 2;
+    this.originy = trueoriginy - height / 2;
+    
+    
+    var a = [originx, originy];
     var b = [a[0], a[1] + height];
     var c = [a[0] + depth, a[1] + depth];
     var d = [c[0], c[1] + height];
